@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Profile - John Doe | MediCare EHR</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>MediCare</h1>
+                    <p>EHR System</p>
+                </div>
+            </div>
+
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <i class="fas fa-home"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="patient.html" class="nav-link active">
+                            <i class="fas fa-users"></i>
+                            Patients
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-calendar-alt"></i>
+                            Appointments
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-flask"></i>
+                            Lab Results
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-chart-line"></i>
+                            Reports
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="user-info">
+                <div class="avatar">LI</div>
+                <div class="user-details">
+                    <h4>Dr.  Lorem Ipsum</h4>
+                    <p>General Practitioner</p>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="patient-header">
+                <div class="patient-info">
+                    <div class="patient-avatar">JD</div>
+                    <div class="patient-details">
+                        <h1>John Doe</h1>
+                        <div class="patient-meta">
+                            <span><i class="fas fa-birthday-cake"></i> 38 years old</span>
+                            <span><i class="fas fa-venus-mars"></i> Male</span>
+                            <span><i class="fas fa-id-card"></i> Patient ID: Lorem Ipsum</span>
+                            <span><i class="fas fa-phone"></i> Lorem Ipsum</span>
+                            <span><i class="fas fa-envelope"></i> Loremipsum@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button class="btn btn-primary">
+                    <i class="fas fa-notes-medical"></i>
+                    Add Clinical Note
+                </button>
+                <button class="btn btn-success">
+                    <i class="fas fa-prescription"></i>
+                    New Prescription
+                </button>
+                <button class="btn btn-warning">
+                    <i class="fas fa-calendar-plus"></i>
+                    Schedule Follow-up
+                </button>
+                <button class="btn btn-secondary">
+                    <i class="fas fa-share-alt"></i>
+                    Refer Patient
+                </button>
+                <button class="btn btn-secondary">
+                    <i class="fas fa-print"></i>
+                    Print Summary
+                </button>
+            </div>
+
+            <div class="grid grid-2">
+                <div>
+                    <div class="card">
+                        <h2><i class="fas fa-history"></i> Medical History</h2>
+                        
+                        <div style="border-left: 4px solid var(--primary); padding-left: 1.5rem; margin-bottom: 2rem; position: relative;">
+                            <div style="position: absolute; left: -8px; top: 0; width: 12px; height: 12px; background: var(--primary); border-radius: 50%;"></div>
+                            <div style="color: var(--gray-500); font-size: 0.875rem; font-weight: 500; margin-bottom: 0.5rem;">March 15, 2024</div>
+                            <h4>Annual Physical Examination</h4>
+                            <p style="color: var(--gray-600); margin-bottom: 0.75rem;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                            <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                <div class="avatar" style="width: 1.5rem; height: 1.5rem; font-size: 0.75rem;">SJ</div>
+                                <small style="color: var(--gray-500); font-weight: 500;">Dr. Sarah Johnson</small>
+                            </div>
+                        </div>
+
+                        <div style="border-left: 4px solid var(--warning); padding-left: 1.5rem; margin-bottom: 2rem; position: relative;">
+                            <div style="position: absolute; left: -8px; top: 0; width: 12px; height: 12px; background: var(--warning); border-radius: 50%;"></div>
+                            <div style="color: var(--gray-500); font-size: 0.875rem; font-weight: 500; margin-bottom: 0.5rem;">February 10, 2024</div>
+                            <h4>Hypertension Follow-up</h4>
+                            <p style="color: var(--gray-600); margin-bottom: 0.75rem;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                            <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                <div class="avatar" style="width: 1.5rem; height: 1.5rem; font-size: 0.75rem;">SJ</div>
+                                <small style="color: var(--gray-500); font-weight: 500;">Dr. Sarah Johnson</small>
+                            </div>
+                        </div>
+
+                        <div style="border-left: 4px solid var(--danger); padding-left: 1.5rem; position: relative;">
+                            <div style="position: absolute; left: -8px; top: 0; width: 12px; height: 12px; background: var(--danger); border-radius: 50%;"></div>
+                            <div style="color: var(--gray-500); font-size: 0.875rem; font-weight: 500; margin-bottom: 0.5rem;">January 5, 2024</div>
+                            <h4>Hypertension Diagnosis</h4>
+                            <p style="color: var(--gray-600); margin-bottom: 0.75rem;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                            <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                <div class="avatar" style="width: 1.5rem; height: 1.5rem; font-size: 0.75rem;">SJ</div>
+                                <small style="color: var(--gray-500); font-weight: 500;">Dr. Sarah Johnson</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h2><i class="fas fa-pills"></i> Current Medications</h2>
+                        
+                        <div class="medical-item medication">
+                            <h4><i class="fas fa-capsules"></i> Lisinopril 10mg</h4>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                            <small>Prescribed: January 5, 2024 • Next refill: April 5, 2024</small>
+                        </div>
+
+                        <div class="medical-item medication">
+                            <h4><i class="fas fa-tablets"></i> Metformin 500mg</h4>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                            <small>Prescribed: January 5, 2024 • Next refill: April 5, 2024</small>
+                        </div>
+
+                        <div class="medical-item medication">
+                            <h4><i class="fas fa-pills"></i> Atorvastatin 20mg</h4>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                            <small>Prescribed: February 10, 2024 • Next refill: May 10, 2024</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card">
+                        <h2><i class="fas fa-exclamation-triangle"></i> Allergies & Alerts</h2>
+                        
+                        <div class="medical-item allergy">
+                            <h4><i class="fas fa-ban"></i> Penicillin</h4>
+                            <p><strong>Severe Reaction:</strong>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                            <small>Documented: January 5, 2024</small>
+                        </div>
+
+                        <div class="medical-item allergy">
+                            <h4><i class="fas fa-ban"></i> Shellfish</h4>
+                            <p><strong>Moderate Reaction:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                            <small>Documented: January 5, 2024</small>
+                        </div>
+
+                        <div class="medical-item allergy">
+                            <h4><i class="fas fa-ban"></i> Latex</h4>
+                            <p><strong>Mild Reaction:</strong>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                            <small>Documented: February 10, 2024</small>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h2><i class="fas fa-flask"></i> Recent Lab Results</h2>
+                        
+                        <div class="lab-result">
+                            <div>
+                                <div class="lab-name">Blood Pressure</div>
+                                <div class="lab-date">March 15, 2024</div>
+                            </div>
+                            <div class="lab-value high">145/92</div>
+                        </div>
+
+                        <div class="lab-result">
+                            <div>
+                                <div class="lab-name">Total Cholesterol</div>
+                                <div class="lab-date">March 15, 2024</div>
+                            </div>
+                            <div class="lab-value normal">185 mg/dL</div>
+                        </div>
+
+                        <div class="lab-result">
+                            <div>
+                                <div class="lab-name">Blood Glucose</div>
+                                <div class="lab-date">March 15, 2024</div>
+                            </div>
+                            <div class="lab-value high">128 mg/dL</div>
+                        </div>
+
+                        <div class="lab-result">
+                            <div>
+                                <div class="lab-name">BMI</div>
+                                <div class="lab-date">March 15, 2024</div>
+                            </div>
+                            <div class="lab-value normal">24.8</div>
+                        </div>
+
+                        <div class="lab-result">
+                            <div>
+                                <div class="lab-name">Heart Rate</div>
+                                <div class="lab-date">March 15, 2024</div>
+                            </div>
+                            <div class="lab-value normal">72 bpm</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h2><i class="fas fa-chart-line"></i> Vital Signs Trend</h2>
+                        
+                        <div style="margin-bottom: 1.5rem;">
+                            <h4 style="margin-bottom: 0.75rem; color: var(--gray-700);">Blood Pressure (Last 3 Visits)</h4>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <span style="font-size: 0.875rem; color: var(--gray-600);">Jan 5, 2024</span>
+                                <span style="font-weight: 600; color: var(--danger);">160/95</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <span style="font-size: 0.875rem; color: var(--gray-600);">Feb 10, 2024</span>
+                                <span style="font-weight: 600; color: var(--warning);">150/88</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span style="font-size: 0.875rem; color: var(--gray-600);">Mar 15, 2024</span>
+                                <span style="font-weight: 600; color: var(--warning);">145/92</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 style="margin-bottom: 0.75rem; color: var(--gray-700);">Weight (Last 3 Visits)</h4>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <span style="font-size: 0.875rem; color: var(--gray-600);">Jan 5, 2024</span>
+                                <span style="font-weight: 600;">185 lbs</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <span style="font-size: 0.875rem; color: var(--gray-600);">Feb 10, 2024</span>
+                                <span style="font-weight: 600;">182 lbs</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span style="font-size: 0.875rem; color: var(--gray-600);">Mar 15, 2024</span>
+                                <span style="font-weight: 600; color: var(--success);">180 lbs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h2><i class="fas fa-paperclip"></i> Documents & Attachments</h2>
+                        
+                        <div class="attachment">
+                            <div class="attachment-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="attachment-info">
+                                <h4>Lorem Ipsum</h4>
+                                <small>March 15, 2024 • 2.4 MB</small>
+                            </div>
+                        </div>
+
+                        <div class="attachment">
+                            <div class="attachment-icon">
+                                <i class="fas fa-file-image"></i>
+                            </div>
+                            <div class="attachment-info">
+                                <h4>Lorem Ipsum</h4>
+                                <small>February 10, 2024 • 1.8 MB</small>
+                            </div>
+                        </div>
+
+                        <div class="attachment">
+                            <div class="attachment-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="attachment-info">
+                                <h4>Lorem Ipsum</h4>
+                                <small>January 5, 2024 • 156 KB</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="card">
+                    <h2><i class="fas fa-phone-alt"></i> Emergency Contact</h2>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                        <span style="font-weight: 500;">Name:</span>
+                        <span>Lorem Ipmsum</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                        <span style="font-weight: 500;">Phone:</span>
+                        <span>Lorem Ipsum</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                        <span style="font-weight: 500;">Relationship:</span>
+                        <span>Lorem Ipsum</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <span style="font-weight: 500;">Address:</span>
+                        <span>Lorem Ipsum</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2><i class="fas fa-shield-alt"></i> Insurance Information</h2>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                        <span style="font-weight: 500;">Provider:</span>
+                        <span>Lorem Ipsum</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                        <span style="font-weight: 500;">Policy Number:</span>
+                        <span>Lorem Ipsum</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                        <span style="font-weight: 500;">Group Number:</span>
+                        <span>Lorem Ipsum</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <span style="font-weight: 500;">Effective Date:</span>
+                        <span>Lorem Ipsum</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2><i class="fas fa-calendar-check"></i> Recent Appointments</h2>
+                <div class="grid grid-3">
+                    <div style="padding: 1.5rem; border: 1px solid var(--gray-200); border-radius: var(--radius); text-align: center;">
+                        <div style="font-size: 1.25rem; font-weight: 600; color: var(--primary); margin-bottom: 0.5rem;">Mar 15</div>
+                        <div style="font-weight: 500; margin-bottom: 0.25rem;">Annual Physical</div>
+                        <div style="font-size: 0.875rem; color: var(--gray-600);">Completed</div>
+                    </div>
+                    <div style="padding: 1.5rem; border: 1px solid var(--gray-200); border-radius: var(--radius); text-align: center;">
+                        <div style="font-size: 1.25rem; font-weight: 600; color: var(--warning); margin-bottom: 0.5rem;">Feb 10</div>
+                        <div style="font-weight: 500; margin-bottom: 0.25rem;">Follow-up</div>
+                        <div style="font-size: 0.875rem; color: var(--gray-600);">Completed</div>
+                    </div>
+                    <div style="padding: 1.5rem; border: 1px solid var(--gray-200); border-radius: var(--radius); text-align: center;">
+                        <div style="font-size: 1.25rem; font-weight: 600; color: var(--danger); margin-bottom: 0.5rem;">Jan 5</div>
+                        <div style="font-weight: 500; margin-bottom: 0.25rem;">Initial Consultation</div>
+                        <div style="font-size: 0.875rem; color: var(--gray-600);">Completed</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare EHR - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>MediCare</h1>
+                    <p>EHR System</p>
+                </div>
+            </div>
+
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">
+                            <i class="fas fa-home"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="patient.html" class="nav-link">
+                            <i class="fas fa-users"></i>
+                            Patients
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-calendar-alt"></i>
+                            Appointments
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-flask"></i>
+                            Lab Results
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-chart-line"></i>
+                            Reports
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="user-info">
+                <div class="avatar">LI</div>
+                <div class="user-details">
+                    <h4>Dr. Lorem Ipsum</h4>
+                    <p>General Practitioner</p>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="page-header">
+                <h1>Good Morning, Dr. Lorem Ipsum</h1>
+                <p>Here's what's happening with your patients today</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">28</div>
+                    <div class="stat-label">Total Patients Today</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Scheduled Appointments</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Pending Lab Results</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">Follow-up Required</div>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button class="btn btn-primary">
+                    <i class="fas fa-user-plus"></i>
+                    Add New Patient
+                </button>
+                <button class="btn btn-secondary">
+                    <i class="fas fa-calendar-plus"></i>
+                    Schedule Appointment
+                </button>
+                <button class="btn btn-secondary">
+                    <i class="fas fa-prescription"></i>
+                    New Prescription
+                </button>
+                <button class="btn btn-secondary">
+                    <i class="fas fa-file-medical"></i>
+                    View Reports
+                </button>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="card">
+                    <h2><i class="fas fa-calendar-day"></i> Today's Appointments</h2>
+                    
+                <div class="appointments-table">
+                    <table class="simple-table">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Patient</th>
+                                <th>Type</th>
+                                <th>Room</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>9:00 AM</strong></td>
+                                <td>John Doe</td>
+                                <td>Annual Physical</td>
+                                <td>Room 101</td>
+                                <td><span class="status upcoming">Upcoming</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>10:30 AM</strong></td>
+                                <td>Mary Smith</td>
+                                <td>Follow-up</td>
+                                <td>Room 102</td>
+                                <td><span class="status current">Current</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>2:00 PM</strong></td>
+                                <td>Robert Johnson</td>
+                                <td>Lab Review</td>
+                                <td>Room 103</td>
+                                <td><span class="status upcoming">Upcoming</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>3:30 PM</strong></td>
+                                <td>Emma Wilson</td>
+                                <td>Routine Checkup</td>
+                                <td>Room 101</td>
+                                <td><span class="status upcoming">Upcoming</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>4:15 PM</strong></td>
+                                <td>Michael Brown</td>
+                                <td>Medication Review</td>
+                                <td>Room 102</td>
+                                <td><span class="status upcoming">Upcoming</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                </div>
+
+                <div>
+                    <div class="card">
+                        <h2><i class="fas fa-exclamation-triangle"></i> Priority Alerts</h2>
+                        
+                        <div class="notification danger">
+                            <h4>
+                                <i class="fas fa-heartbeat"></i>
+                                Critical Lab Result
+                            </h4>
+                            <p>John Doe -  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                        </div>
+
+                        <div class="notification warning">
+                            <h4>
+                                <i class="fas fa-clock"></i>
+                                Appointment Reminder
+                            </h4>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                        </div>
+
+                        <div class="notification info">
+                            <h4>
+                                <i class="fas fa-pills"></i>
+                                Prescription Refill
+                            </h4>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                        </div>
+                    </div>
+
+                    <!-- Recent Activity -->
+                    <div class="card">
+                        <h2><i class="fas fa-history"></i> Recent Activity</h2>
+                        
+                        <div class="activity-item">
+                            <div class="activity-dot success"></div>
+                            <div class="activity-content">
+                                <h4>Lab Results Uploaded</h4>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                                <small>2 hours ago</small>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-dot primary"></div>
+                            <div class="activity-content">
+                                <h4>Prescription Issued</h4>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                                <small>4 hours ago</small>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-dot warning"></div>
+                            <div class="activity-content">
+                                <h4>Appointment Rescheduled</h4>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                                <small>6 hours ago</small>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-dot success"></div>
+                            <div class="activity-content">
+                                <h4>Patient Discharged</h4>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                                <small>1 day ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2><i class="fas fa-chart-bar"></i> Weekly Overview</h2>
+                <div class="grid grid-4">
+                    <div style="text-align: center; padding: 1rem;">
+                        <div style="font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem;">156</div>
+                        <div style="color: var(--gray-600); font-weight: 500;">Patients This Week</div>
+                    </div>
+                    <div style="text-align: center; padding: 1rem;">
+                        <div style="font-size: 2rem; font-weight: 700; color: var(--success); margin-bottom: 0.5rem;">89%</div>
+                        <div style="color: var(--gray-600); font-weight: 500;">Appointment Rate</div>
+                    </div>
+                    <div style="text-align: center; padding: 1rem;">
+                        <div style="font-size: 2rem; font-weight: 700; color: var(--warning); margin-bottom: 0.5rem;">23</div>
+                        <div style="color: var(--gray-600); font-weight: 500;">Lab Reports</div>
+                    </div>
+                    <div style="text-align: center; padding: 1rem;">
+                        <div style="font-size: 2rem; font-weight: 700; color: var(--info); margin-bottom: 0.5rem;">45</div>
+                        <div style="color: var(--gray-600); font-weight: 500;">Prescriptions</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
